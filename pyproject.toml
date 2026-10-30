@@ -1,0 +1,22 @@
+[project]
+name = "sn17-3js-miner"
+version = "0.1.0"
+description = "Judge-aware image-to-Three.js miner for 404-GEN (Bittensor SN17) Competition 3"
+requires-python = ">=3.13,<3.14"
+license = "MIT"
+# The validator runtime supplies exactly these packages plus the witness and renderer clients.
+dependencies = [
+    "tlslite-ng==0.8.2",
+    "cryptography==50.0.2",
+    "httpx==0.28.1",
+    "websockets==17.2",
+    "bittensor-wallet==4.1.0",
+    "openai==3.29.0",
+    "pydantic==2.14.1",
+    "numpy==2.5.4",
+    "pillow==13.0.0",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
